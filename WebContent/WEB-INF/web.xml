@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MedicaManage</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>searchMedicaServlet</servlet-name>
+    <servlet-class>com.ysu.web.SearchMedicaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchMedicaServlet</servlet-name>
+    <url-pattern>/searchMedica</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddMedicaServlet</display-name>
+    <servlet-name>AddMedicaServlet</servlet-name>
+    <servlet-class>com.ysu.web.AddMedicaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddMedicaServlet</servlet-name>
+    <url-pattern>/addMedica</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>DelMedicaServlet</servlet-name>
+    <servlet-class>com.ysu.web.DelMedicaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelMedicaServlet</servlet-name>
+    <url-pattern>/delMedica</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>ModifyMedicaServlet</servlet-name>
+    <servlet-class>com.ysu.web.ModifyMedicaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyMedicaServlet</servlet-name>
+    <url-pattern>/modifyMedica</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.ysu.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>ModifyPwdServlet</servlet-name>
+    <servlet-class>com.ysu.web.ModifyPwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyPwdServlet</servlet-name>
+    <url-pattern>/modifyPwd</url-pattern>
+  </servlet-mapping>
+</web-app>
